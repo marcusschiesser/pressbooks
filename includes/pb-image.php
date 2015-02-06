@@ -57,7 +57,7 @@ function is_valid_image( $data, $filename, $is_stream = false ) {
 	$format = explode( '.', $filename );
 	$format = strtolower( end( $format ) ); // Extension
 	if ( $format == 'jpg' ) $format = 'jpeg'; // Fix stupid mistake
-	if ( ! ( $format == 'jpeg' || $format == 'gif' || $format == 'png' ) ) {
+	if ( ! ( $format == 'jpeg' || $format == 'gif' || $format == 'png' || $format == 'svg') ) {
 		return false;
 	}
 
